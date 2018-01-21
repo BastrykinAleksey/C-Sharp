@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SwiftDoc - система электронного документооборота</title>
+<meta content="SwiftDoc, документооборот" name="keywords">
+<meta name="description" content="SwiftDoc электронный документооборот">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link href='http://fonts.googleapis.com/css?family=EB+Garamond&amp;subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/owl/assets/owl.carousel.min.css">
+<link href="css/site.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico">
+<head>
+<body id="page-top" data-spy="scroll" data-target="#navbar" data-offset="120">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45049952 = new Ya.Metrika({
+                    id:45049952,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45049952" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+  <nav class="navbar navbar-swiftdoc navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">          
+          <button type="button" id="navbar-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="//swiftdoc.ru/#about" class="mobile-top"></a>
+          <a class="navbar-brand" href="//swiftdoc.ru/#page-top"><img src="img/logo.png" alt="SwiftDoc"/></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+<!--           <ul class="nav navbar-nav">
+            <li><a href="#system">О программе</a></li>
+            <li><a href="#solution">Решения</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li></li>
+            <li></li>
+          </ul>
+ -->          <p class="navbar-text navbar-contacts"><span class="phone">+7 (812) 305-25-74</span> <a href="mailto:info@ptmk.ru">info@ptmk.ru</a></p>
+          <p class="navbar-text navbar-right"><a href="http://demo.swiftdoc.ru" target="_blank"><img src="img/button_demo.png" alt=""/></a></p>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!--   <section id="about">
+   <div class="owl-carousel owl-theme">
+     <div class="about-item-1">
+       <div class="text-center top-block">
+         <span>Электронный архив</span>
+         <span>Делопроизводство</span>
+       </div>
+       <img src="img/abount-map.png" alt="" style="max-width:1033px;margin: 0 auto;"/>
+       <h2 class="text-center">Документооборот в организациях с филиальной сетью</h2>
+       <div class="text-center"><button type="button" class="btn btn-lg btn-yellow" data-toggle="modal" data-target="#m-login">Оставить заявку</button></div>
+     </div>
+   </div>
+  </section> -->
+
+  <section id="system">
+    <div class="container">
+      <h2>Сократите время на работу с обращениями граждан в 2 раза!</h2>
+      <div class="row">
+        <div class="col-lg-7 col-sm-7 text-center">
+           <h4><img src="img/Asset_13.png" alt=""/>За счет автоматизации регистрации, обработки и ответов. </h4>
+          <p>
+          <ol>
+            <li>Готовое модульное решение - легко адаптируется под ваши задачи.</li>
+            <li>Полностью соответствует рекомендациям АП РФ.</li>
+            <li>Содержит полный типовой общероссийский тематический классификатор обращений.</li>
+            <li>Отчет по обращениям в любых разрезах.</li>
+            <li>Напоминания ответственному. </li>
+          </ol>
+         </p>
+        </div>
+      <div class="col-lg-5 col-sm-5 text-center">
+        
+          <img  src="img/RegOG.png" class="img-rounded img-fluid" alt="" />
+      
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+  <section id="req-pre">
+    <div class="container">
+      <form class="form-inline" id="form-pre">
+        <div class="form-group">
+          <input type="text" id="pre-fio" class="form-control input-lg" placeholder="Имя Фамилия" name="fio" required="required"/>
+        </div>
+        <div class="form-group">
+          <input type="text" id="pre-email" class="form-control input-lg" placeholder="E-mail" name="email" required="required"/>
+        </div>
+        <button name="req-pre" class="btn btn-lg btn-green">Заказать презентацию</button>
+      </form>
+      <p class="p-accept"><span>*</span> При нажатии на кнопку Вы даете <a href="http://www.ptmk.ru/download/soglasie.pdf" target="_blank">согласие</a> на обработку персональных данных согласно <a href="http://www.ptmk.ru/download/politics.pdf" target="_blank">политики компании в отношении обработки персональных данных.</a></p>
+    </div>
+  </section>
+   <section id="solution">
+    <div class="container">
+      <h2>Преимущества</h2>
+      <div class="row">
+        <div class="col-lg-4 col-sm-4 text-center">
+          <img src="img/icon_1.png" alt=""/>
+          <h4>Система документооборота</h4>
+          <p>Регистрация входящих, внутренних, исходящих документов. Хранение, обработка, маршрутизация, прикрепление файлов в документ, их версионность.</p>
+        </div>
+        <div class="col-lg-4 col-sm-4 text-center">
+          <img src="img/icon_2.png" alt=""/>
+          <h4>Система контроля задач</h4>
+          <p>На основе документов создание поручений, перепоручений исполнителю или группе исполнителей. Контроль за исполнением поручений через отчет или систему напоминаний.</p>
+        </div>
+        <div class="col-lg-4 col-sm-4 text-center">
+          <img src="img/icon_3.png" alt=""/>
+          <h4>Система согласования</h4>
+          <p>Регистрация проектных документов,  документов замещения на время отсутствия ответственных лиц. Организация сложного маршрута согласования. Версионность проектных документов.</p>
+        </div>
+      </div>
+     
+    </div>
+  </section> 
+  <section id="partner">
+    <div class="container">
+      <h2> Наши клиенты</h2>
+      <div class="row">
+        <div class="col-lg-4 col-sm-4 text-center">
+          <img src="img/Стакс.jpg" alt=""/>
+        </div>
+        <div class="col-lg-4 col-sm-4 text-center">
+          <img src="img/ДорСервис.jpg" alt=""/>
+        </div>
+        <div class="col-lg-4 col-sm-4 text-center">
+          <img src="img/Сургут.png" alt=""/>     
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-4 text-center">
+          <img src="img/Электробалт.jpg" alt=""/>
+        </div>
+        <div class="col-lg-4 col-sm-4 text-center">
+          <img src="img/ИПП.jpg" alt=""/>
+        </div>
+        <div class="col-lg-4 col-sm-4 text-center">
+          <img src="img/Пикэлби.png" alt=""/>     
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- <section id="solution">
+    <div class="container">
+      <h2>Решения от SwiftDoc</h2>
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <div class="item item-green">
+            <div class="hdr"><img src="img/icon_6.png" alt=""/></div>
+            <div class="text-center body">
+              <h3>Для бизнеса</h3>
+              <p>Проектная работа, CRM, Общение</p>
+              <button class="btn btn-default" data-toggle="modal" data-target="#m-login">Приступить к работе</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="item item-yellow">
+            <div class="hdr"><img src="img/icon_7.png" alt=""/></div>
+            <div class="text-center body">
+              <h3>Для государственных учреждений</h3>
+              <p>Учёт обращений граждан, Поддержка ЭЦП, Межведомственное взаимодействие</p>
+              <button class="btn btn-default" data-toggle="modal" data-target="#m-login">Приступить к работе</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  
+    <footer id="contact">
+      <div class="container">
+       <div class="row">
+        <div class="col-lg-12 col-sm-12 text-center">
+           <h3>Контакты</h3>
+        </div>
+      </div>
+    </div>
+    
+     <ul>
+       <li class="phone">+7 (812) 305-25-74</li>
+       <li class="addr">Санкт-Петербург, ул. Мебельная д.12, корпус 1, офис 103</li>
+       <li class="mail"><a href="mailto:info@ptmk.ru">info@ptmk.ru</a></li>
+       <li class="skype">ptmk_ptmk</li>
+       <!--<li class="icq">689945104</li>-->
+     </ul>
+     <div class="social">
+       <a href="https://vk.com/swiftdoc" class="s-vk" target="_blank"></a>
+       <a href="https://plus.google.com/+PtmkRu" class="s-gp" target="_blank"></a>
+       <a href="https://twitter.com/ptmkspb" class="s-tw" target="_blank"></a>
+       <a href="https://www.facebook.com/swiftdocspb" class="s-fb" target="_blank"></a>
+     </div>
+    </div>
+    <div id="map"></div>    
+    <div class="ptmk-link-footer">
+      Разработчик системы SwiftDoc компания <a href="http://www.ptmk.ru" target="_blank">ПТМК</a>
+    </div>
+  </footer>
+    
+  <!-- <footer id="contact">
+    <div id="map-contact">
+     <h3>Контакты</h3>
+     <ul>
+       <li class="phone">+7 (812) 305-25-74</li>
+       <li class="addr">Санкт-Петербург, ул. Мебельная д.12, корпус 1, офис 103</li>
+       <li class="mail"><a href="mailto:info@ptmk.ru">info@ptmk.ru</a></li>
+       <li class="skype">ptmk_ptmk</li> -->
+       <!--<li class="icq">689945104</li>-->
+  <!--    </ul>
+     <div class="social">
+       <a href="https://vk.com/swiftdoc" class="s-vk" target="_blank"></a>
+       <a href="https://plus.google.com/+PtmkRu" class="s-gp" target="_blank"></a>
+       <a href="https://twitter.com/ptmkspb" class="s-tw" target="_blank"></a>
+       <a href="https://www.facebook.com/swiftdocspb" class="s-fb" target="_blank"></a>
+     </div>
+    </div>
+    <div id="map"></div>    
+    <div class="ptmk-link-footer">
+      Разработчик системы SwiftDoc компания <a href="http://www.ptmk.ru" target="_blank">ПТМК</a>
+    </div>
+  </footer> -->
+
+
+<div id="m-login" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-sp" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <br/>
+        <div id="m-login-msg"></div>
+        <ul id="m-login-tab" class="nav nav-tabs2b" role="tablist">
+          <li role="presentation" class="active"><a href="#f-home" aria-controls="f-home" role="tab" data-toggle="tab"><span>Оставить заявку</span></a></li>
+          <li role="presentation"><a href="http://demo.swiftdoc.ru" target="_blank"><span>Вход</span></a></li>
+        </ul>
+        <div class="tab-content">
+         <div role="tabpanel" class="tab-pane active" id="f-home">
+           <form role="form" class="text-center" id="form-req-demo">
+           <div class="input-group2">
+             <input type="text" name="fio" placeholder="Имя Фамилия" class="form-control" required="required"/>
+           </div>
+           <div class="input-group2">
+             <input type="text" name="company" placeholder="Компания" class="form-control" required="required"/>
+           </div>
+           <div class="input-group2">
+             <input type="text" name="email" placeholder="E-mail" class="form-control" required="required"/>
+           </div>
+           <div class="input-group2">
+             <input type="text" name="phone" placeholder="Телефон" class="form-control" required="required"/>
+           </div>
+           <div class="input-group2">
+             <textarea class="form-control" name="comment" placeholder="Комментарий"></textarea>
+           </div>
+           <p class="p-accept"><span>*</span> При нажатии на кнопку Вы даете <a href="http://www.ptmk.ru/download/soglasie.pdf" target="_blank">согласие</a> на обработку персональных данных согласно <a href="http://www.ptmk.ru/download/politics.pdf" target="_blank">политики компании в отношении обработки персональных данных.</a></p>
+           <button class="btn btn-green2">Заказать демо версию</button>
+           </form>
+         </div>
+         <div role="tabpanel" class="tab-pane" id="f-login">
+           <p class="text-center text-danger" style="margin-top:20px">Раздел находится в разработке</p>
+           <form role="form" class="text-center" action="http://demo.swiftdoc.ru/login" method="post" style="display:none;">
+           <div class="input-group2">
+             <input type="text" name="UserName" placeholder="Логин" class="form-control" required="required"/>
+           </div>
+           <div class="input-group2">
+             <input type="password" name="Password" placeholder="Пароль" class="form-control" required="required"/>
+           </div>
+           <button class="btn btn-green2" name="login">Войти</button>
+           </form>
+         </div>        
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="m-demo" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-sp" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <br/>
+           <div id="m-demo-msg"></div>
+           <p class="text-center">Закажите демонстрацию и мы свяжемся с вами в удобное для вас время</p>
+           <form role="form" class="text-center" id="form-demo">
+           <input type="hidden" id="m-demo-email" name="email" value=""/>
+           <div class="input-group2">
+             <input type="text" id="m-demo-fio" name="fio" placeholder="Имя Фамилия" class="form-control" required="required"/>
+           </div>
+           <div class="input-group2">
+             <input type="text" name="skype" placeholder="Скайп или телефон" class="form-control" required="required"/>
+           </div>
+           <div class="input-group2">
+             <input type="text" name="atime" placeholder="Удобное время" class="form-control"/>
+           </div>
+           <p class="p-accept"><span>*</span> При нажатии на кнопку Вы даете <a href="http://www.ptmk.ru/download/soglasie.pdf" target="_blank">согласие</a> на обработку персональных данных согласно <a href="http://www.ptmk.ru/download/politics.pdf" target="_blank">политики компании в отношении обработки персональных данных.</a></p>
+           <button class="btn btn-green2">Заказать демонстрацию</button>
+           </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script> 
+ <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script> 
+ <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+ <script type="text/javascript" src="js/owl/owl.carousel.min.js"></script>  
+ <script type="text/javascript" src="js/site.js"></script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHg4STVgnRAM8bgMdRwUBukLecXzgWnqE&callback=initMap"></script>
+</body>
+</html>
