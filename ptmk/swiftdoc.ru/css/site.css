@@ -1,8 +1,8 @@
-/*
-#18b58a çåëåíûé
-#ffb525 æåëòûé
-#737373 ñåðûé òåêñò
-#dfdfdf ñâåòëîñåðûå ïëàøêè
+
+#18b58a Ã§Ã¥Ã«Ã¥Ã­Ã»Ã©
+#ffb525 Ã¦Ã¥Ã«Ã²Ã»Ã©
+#737373 Ã±Ã¥Ã°Ã»Ã© Ã²Ã¥ÃªÃ±Ã²
+#dfdfdf Ã±Ã¢Ã¥Ã²Ã«Ã®Ã±Ã¥Ã°Ã»Ã¥ Ã¯Ã«Ã Ã¸ÃªÃ¨
 */
 :active, :hover, :focus {
     outline: 0;
@@ -59,21 +59,8 @@ a, button {outline:none;}
 #about .owl-carousel > div {background-color:#dfdfdf;}
 .about-item-1 .top-block {margin:25px 0;}
 .about-item-1 .top-block span {font-size:20px;margin:0 30px;}
-#solution {background-color:#dfdfdf;padding-top:50px;}
-#solution h2, #system h2 {text-align:center;margin-bottom:40px;}
-#solution .item {width:100%;margin-bottom:100px;background-color:#fff;padding-bottom:50px;min-height:400px;}
-#solution .hdr {text-align:center;background-color:#ccc;height:70px;margin-bottom:100px;}
-#solution .item-green .hdr {background-color:#42B68C;}
-#solution .item-yellow .hdr {background-color:#ffb525;}
-#solution .body {padding:10px 30px;font-size:1.2em;}
-#solution .body p {margin:20px 0;min-height:50px;}
-#solution .body .btn {font-size:1.1em;}
-#system {
-  background:url(../img/BG.png) no-repeat bottom center;
-  padding-bottom:280px;
-  padding-top:50px; 
-  background-color: #EBEBEB;
-}
+
+
 #system_jpg{
 background:url(../img/RegOG.png) no-repeat bottom center; 
 }
@@ -106,7 +93,7 @@ footer {position:relative;height:500px;}
 #map-contact .social {border-top:2px solid #dfdfdf;text-align:center;padding:10px 0;}
 #map-contact a, #map-contact a:hover, #map-contact a:focus {color:#737373;}
 
-/*Для рекламных страниц*/
+/*Ð”Ð»Ñ Ñ€ÐµÐºÐ»Ð°Ð¼Ð½Ñ‹Ñ… ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†*/
 #contact {
   position:absolute;
   top:50px;
@@ -228,3 +215,77 @@ footer {position:relative;height:500px;}
 @media (max-width: 390px) {
   #m-login-tab > li {display:block;width:100%;}
 }
+
+
+
+
+/*Стили для рекламной страницы*/
+#system {
+  background:url(../img/BG.png) no-repeat bottom center;
+  font-size: 15px;
+  padding-bottom:100px;
+  padding-top:50px; 
+  background-color: #EBEBEB;
+}
+
+.system_container_h2{
+  color:#42B68C;
+}
+.system_container_h3{
+  color:#d69820;
+ 
+}
+.system_container_h3 img{
+   padding-right:  20px;
+}
+#system ul {
+  padding-left: 50px;
+   list-style-type: none;
+   text-align: left;
+}
+#system ul li{
+  padding-top: 5px;
+   
+}
+#solution {background-color:#dfdfdf;padding:70px;}
+#solution h2, #system h2 {text-align:center;margin-bottom:40px;}
+#solution .item {width:100%;margin-bottom:100px;background-color:#fff;padding-bottom:50px;min-height:400px;}
+#solution .hdr {text-align:center;background-color:#ccc;height:70px;margin-bottom:100px;}
+#solution .item-green .hdr {background-color:#42B68C;}
+#solution .item-yellow .hdr {background-color:#ffb525;}
+#solution .body {padding:10px 30px;font-size:1.2em;}
+#solution .body p {margin:20px 0;min-height:50px;}
+#solution .body .btn {font-size:1.1em;}
+
+#partner{
+ background:url(../img/romb_bg.png) 0 0; 
+ padding: 100px;
+}
+#partner img{
+  padding: 20px;
+}
+.contact-reklama{
+  background-color: #42B68C;
+  color: #ffffff;
+}
+.contacts li{
+display:inline-block;height:50px;margin:0 10px;
+
+}
+
+.contact-reklama ul li {
+  background:url(../img/c-icons.png) no-repeat 0 0;
+  color:#ffffff;
+  padding-left: 45px;
+  height: 40px;
+  margin: 10px 0;
+  margin-left: 45px;
+  font-size: 15px;
+  padding-top: 4px;
+}
+.contact-reklama ul li.phone {background:url(../img/icon_soc_phone.png) no-repeat 0 0;}
+.contact-reklama ul li.addr {background:url(../img/icon_soc_Map.png) no-repeat 0 0;}
+.contact-reklama ul li.mail {background:url(../img/icon_soc_Mail.png) no-repeat 0 0;}
+.contact-reklama ul li.skype {background:url(../img/icon_soc_Skype.png) no-repeat 0 0;}
+.contact-reklama ul li.icq {background:url(../img/icon_soc_Map.png) no-repeat 0 0;}
+/*.contact-reklama .social {border-top:2px solid #dfdfdf;text-align:center;padding:10px 0;}
